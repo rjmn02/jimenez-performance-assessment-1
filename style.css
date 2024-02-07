@@ -1,3 +1,69 @@
-div {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*     Primary Dark Blue: #192841
+    Secondary Dark Blue: #2A3F5F
+    Accent Blue: #3E5E8C
+    Light Blue: #6386B9
+    Dark Gray: #555555
+    Light Gray: #CCCCCC 
+    very light gray: #F0F0F0
     
+*/
+
+* {
+  border: 3px solid black;
+  
+}
+
+body {
+  color: #F0F0F0;
+  margin: 0;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: #192841;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 32px
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.banner-content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 540px;
+}
+.banner-summary {
+  width: 65%;
+}
+
+img.banner-img {
+  width: 300px;
+  border-radius: 100%;
 }
