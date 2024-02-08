@@ -22,19 +22,19 @@ body {
   font-family: 'Noto Sans Mono', monospace;
 }
 
-li {
-  list-style: none;
+.nav li {
+  list-style: none; 
   margin: 0;
   padding: 0;
 }
 
-a {
+.nav li a {
   position: relative;
   text-decoration: none;
   color: #F0F0F0;
 }
 
-a::after {
+.nav li a::after {
   content: '';
   position: absolute;
   width: 0;
@@ -45,12 +45,8 @@ a::after {
   transition: width .3s;
 }
 
-a:hover::after {
+.nav li a:hover::after {
   width: 100%;
-}
-
-.banner {
-  background-color: #192841;
 }
 
 .header {
@@ -72,7 +68,8 @@ a:hover::after {
   gap: 42px;
 }
 
-.banner-content {
+.banner{
+  background-color: #192841;
   display: flex;
   text-align: center;
   align-items: center;
@@ -87,11 +84,22 @@ a:hover::after {
 }
 
 .banner-summary-subtext {
-  text-align: justify;
   color: #6386B9;
 }
 
 img.banner-img {
   width: 300px;
-  border-radius: 100%;
+  border-radius: 50%;
+}
+
+.early-life {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 540px;
+}
+
+img.early-life-img {
+  width: 300px;
+  border-radius: 50%;
 }
