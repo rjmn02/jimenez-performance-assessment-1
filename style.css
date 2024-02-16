@@ -102,7 +102,7 @@ body {
   color: #6386B9;
 }
 
-img.banner-img,  img.early-life-img, img.education-career-img, img.death-img{
+img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
