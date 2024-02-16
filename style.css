@@ -58,6 +58,16 @@ body {
   gap: 42px;
 }
 
+@media screen and (max-width: 600px) {
+  #header {
+    flex-direction: column;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
 #banner, #early-life, #education-career, #death {
   display: flex;
   align-items: center;
@@ -107,12 +117,12 @@ img.banner-img,  img.early-life-img, img.education-career-img, img.death-img{
 }
 
 .timeline {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Noto Sans Mono', monospace;
   background-color: #6386B9;
   color: #F0F0F0;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
   border: none;
@@ -127,13 +137,9 @@ img.banner-img,  img.early-life-img, img.education-career-img, img.death-img{
   background-color: #2A3F5F; 
 }
 
-
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #192841;
   color: #F0F0F0;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0px;
 }
