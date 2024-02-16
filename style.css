@@ -11,7 +11,8 @@
 */
 
 * {
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  text-align: center;
   
 }
 
@@ -29,27 +30,17 @@ body {
 }
 
 .nav li a {
-  position: relative;
   text-decoration: none;
   color: #F0F0F0;
+  transition: color 0.3s ease; /* This will make the color change smoothly */
 }
 
-.nav li a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background: #F0F0F0;
-  transition: width .3s;
+.nav li a:hover {
+  color: #192841; /* This is the color the link will change to when hovered over */
 }
 
-.nav li a:hover::after {
-  width: 100%;
-}
 
-.header {
+#header {
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -68,17 +59,32 @@ body {
   gap: 42px;
 }
 
-.banner{
-  background-color: #192841;
+#banner, #early-life, #education-career, #death {
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
   min-height: 540px;
-  padding: 0 32px;
+  padding: 30px;
 }
+
+#banner {
+  background-color: #192841;
+}
+
+#early-life {
+  background-color: #2A3F5F;
+}
+
+#education-career {
+  background-color: #192841;
+}
+
+#death {
+  background-color: #2A3F5F;
+}
+
 .banner-summary {
   width: 700px;
 }
@@ -87,32 +93,48 @@ body {
   color: #6386B9;
 }
 
-img.banner-img {
-  width: 300px;
-  border-radius: 50%;
-}
-
-.early-life {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 540px;
-  gap: 60px;
-  padding: 0 32px;
-  flex-wrap: wrap;
-  background-color: #2A3F5F;
-}
-
-img.early-life-img {
+img.banner-img,  img.early-life-img, img.education-career-img, img.death-img{
   width: 300px;
   height: 300px;
   border-radius: 50%;
 }
 
-.early-life-text-container {
+.early-life-text-container, .education-career-text-container, .death-text-container{
   width: 700px;
 }
 
-.early-life-subtext {
+.early-life-subtext, .education-career-subtext, .death-subtext{
   color: #6386B9;
+}
+
+.timeline {
+  background-color: #6386B9;
+  color: #F0F0F0;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease; /* Animation for hover effect */
+}
+
+.timeline:hover {
+  background-color: #3E5E8C; /* Color change on hover */
+}
+
+.timeline:active {
+  background-color: #2A3F5F; /* Color change when clicked */
+}
+
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #192841;
+  color: #F0F0F0;
+  text-align: center;
+  padding: 10px 0;
 }
